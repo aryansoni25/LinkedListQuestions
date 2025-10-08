@@ -9,11 +9,11 @@ public class LinkedList {
 
     public void createLL(int nodeValue){
 
-        Node node=new Node();
-        node.value=nodeValue;
-        node.next=null;
-        tail=node;
-        head=node;
+        Node node1=new Node();
+        node1.value=nodeValue;
+        node1.next=null;
+        tail=node1;
+        head=node1;
         size=1;
     }
 

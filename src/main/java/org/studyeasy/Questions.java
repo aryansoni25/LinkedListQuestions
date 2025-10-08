@@ -34,18 +34,18 @@ public class Questions {
     }
 
     public LinkedList partition(LinkedList ll,int x){
-        Node current= ll.head;
+        Node curr= ll.head;
          ll.tail= ll.head;
-        while (current!=null){
-            Node next=current.next;
-            if(current.value<x){
-                current.next=ll.head;
-                ll.head=current;
+        while (curr!=null){
+            Node next=curr.next;
+            if(curr.value<x){
+                curr.next=ll.head;
+                ll.head=curr;
             }else{
-                ll.tail.next=current;
-                ll.tail=current;
+                ll.tail.next=curr;
+                ll.tail=curr;
             }
-            current=next;
+            curr=next;
         }
         ll.tail.next=null;
         return ll;

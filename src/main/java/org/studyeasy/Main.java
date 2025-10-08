@@ -16,9 +16,9 @@ public class Main {
         node2.insert(7);
         node2.insert(2);
         node2.insert(9);
-        //node2.traverse();
-//        temp.deleteDups(node1);
-//        node1.traverse();
+        node2.traverse();
+        temp.deleteDups(node1);
+        node1.traverse();
         Node n1=temp.NthToLast(node1,4);
         System.out.println(n1.value);
 //        temp.partition(node1,8);

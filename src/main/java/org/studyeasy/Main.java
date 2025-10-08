@@ -21,10 +21,10 @@ public class Main {
         node1.traverse();
         Node n1=temp.NthToLast(node1,4);
         System.out.println(n1.value);
-//        temp.partition(node1,8);
-//        node1.traverse();
-//        LinkedList result=temp.sumList(node1,node2);
-//        result.traverse();
+        temp.partition(node1,8);
+        node1.traverse();
+        LinkedList result=temp.sumList(node1,node2);
+        result.traverse();
         temp.addSameNode(node1,node2,7);
         temp.addSameNode(node1,node2,3);
         temp.addSameNode(node1,node2,4);
